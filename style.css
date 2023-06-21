@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/images/pattern-background-desktop.svg);
+  /* background-size: 100% 100%; */
+
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  background-size: cover;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow:  0 0 20px hsl(224, 23%, 55%);
+}
+.text-container {
+  padding: 7%;
+  text-align: center;
+}
+.text-container h1 {
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 20px;
+  font-weight: 900;
+  font-size: 2rem;
+}
+.p {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+.music {
+  display: flex;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.annual {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.annual div {
+  margin-left: 20px;
+}
+.annual div h5 {
+   font-weight: 900;
+  font-size: 16px;
+  color: hsl(223, 47%, 23%);
+}
+.annual div p {
+  font-size: 14px;
+  color: hsl(240, 3%, 73%);
+}
+
+.text-container .a {
+  font-weight: 900;
+  color: hsl(222, 83%, 34%);
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.text-container .a:hover {
+  text-decoration: none;
+  color: hsl(245, 75%, 52%);
+}
+
+.btn1 {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  padding: 20px 0;
+  border-radius: 12px;
+  margin: 30px 0;
+}
+
+.btn1:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+.btn2 {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+}
+
+.btn2:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+
+@media only screen and (max-width:375px) {
+  body {background-image: url(./images/pattern-background-mobile.svg);
+    font-size: 13px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+background-repeat: no-repeat;}
+
+  
+}
+.container {
+  width: 87%;
+}
+.text-container h1 {
+  font-size: 1.5rem;
+}
+.annual div h5 {
+  font-size: 13px;
+}
+.annual div  {
+  margin-left: 10px;
+}
+
+.p {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  font-size: 15px;
+}
+
+
